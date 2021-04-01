@@ -1,0 +1,17 @@
+﻿@page "/"
+
+@page "/LiveVideoChat/Index"
+
+<h3>Index</h3>
+@if (this.Responses.Count > 0)
+{
+    <ul class="list-group">
+        @foreach (var singleResponse in this.Responses)
+        {
+            <li class="list-group-item-info">@singleResponse</li>
+        }
+    </ul>
+}
+
+<video autoplay @ref="VideoElement"></video>
+<button @onclick="@(async ()=> await StartLiveChat())">Start</button>

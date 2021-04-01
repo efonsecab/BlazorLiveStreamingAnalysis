@@ -1,0 +1,20 @@
+<Project Sdk="Microsoft.NET.Sdk.Web">
+
+  <PropertyGroup>
+    <TargetFramework>net5.0</TargetFramework>
+    <UserSecretsId>538fdfb1-54c1-450e-a207-08dc19af38ec</UserSecretsId>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <PackageReference Include="Microsoft.AspNetCore.Components.WebAssembly.Server" Version="5.0.3" />
+    <PackageReference Include="PTI.Microservices.Library" Version="1.0.3.3-preview" />
+    <PackageReference Include="PTI.Microservices.Library.Models" Version="1.0.3.3-preview" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\Client\BlazorLiveStreamAnalysis.Client.csproj" />
+    <ProjectReference Include="..\Shared\BlazorLiveStreamAnalysis.Shared.csproj" />
+  </ItemGroup>
+
+
+</Project>
